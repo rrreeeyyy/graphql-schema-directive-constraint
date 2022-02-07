@@ -2,7 +2,7 @@
 
 Allows using @constraint as a directive to validate input data for [graphql-ruby](https://graphql-ruby.org).
 
-This gem is heavealy inspired by [confuser/graphql-constraint-directive](https://github.com/confuser/graphql-constraint-directive)
+This gem is greatly inspired by [confuser/graphql-constraint-directive](https://github.com/confuser/graphql-constraint-directive)
 
 ## Installation
 
