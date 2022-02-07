@@ -1,0 +1,30 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7
+  SuggestExtensions: false
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Layout/LineLength:
+  Max: 140
+
+Naming/VariableName:
+  Enabled: false
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  Enabled: false
+
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
