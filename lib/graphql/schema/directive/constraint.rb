@@ -32,6 +32,12 @@ module GraphQL
         argument(:pattern, String, description: "Ensure value matches regex, e.g. alphanumeric", required: false)
         argument(:format, String, description: "Ensure value is in a particular format", required: false)
 
+        argument(:min, Integer, description: "Ensure value is greater than or equal to", required: false)
+        argument(:max, Integer, description: "Ensure value is less than or equal to", required: false)
+        argument(:exclusiveMin, Integer, description: "Ensure value is greater than", required: false)
+        argument(:exclusiveMax, Integer, description: "Ensure value is less than", required: false)
+        argument(:multipleOf, Integer, description: "Ensure value is a multiple", required: false)
+
         argument(:without_validator, Boolean, description: "Use constraint directive without validator", required: false)
 
         locations(
@@ -53,6 +59,14 @@ module GraphQL
             owner.validates({ length: { maximum: maxLength } })
           in [:pattern, pattern]
             owner.validates({ format: { with: pattern } })
+          in [:min, min]
+            owner.validates({ numericality: { greater_than_or_equal_to: min } })
+          in [:max, max]
+            owner.validates({ numericality: { less_than_or_equal_to: max } })
+          in [:exclusiveMin, exclusiveMin]
+            owner.validates({ numericality: { greater_than: exclusiveMin } })
+          in [:exclusiveMax, exclusiveMax]
+            owner.validates({ numericality: { less_than: exclusiveMax } })
           else
             raise NotImplementedError("Given arguments are not implemented yet")
           end
