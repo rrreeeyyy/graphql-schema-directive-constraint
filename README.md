@@ -93,18 +93,18 @@ This example only generates `@constraint` directive on schema but it does not va
     - [x] constraint
     - [ ] validator
 - [ ] Integer
-  - [ ] min
-    - [ ] constraint
-    - [ ] validator
-  - [ ] max
-    - [ ] constraint
-    - [ ] validator
-  - [ ] exclusiveMin
-    - [ ] constraint
-    - [ ] validator
-  - [ ] exclusiveMax
-    - [ ] constraint
-    - [ ] validator
+  - [x] min
+    - [x] constraint
+    - [x] validator
+  - [x] max
+    - [x] constraint
+    - [x] validator
+  - [x] exclusiveMin
+    - [x] constraint
+    - [x] validator
+  - [x] exclusiveMax
+    - [x] constraint
+    - [x] validator
   - [ ] multipleOf
     - [ ] constraint
     - [ ] validator
