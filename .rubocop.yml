@@ -28,3 +28,9 @@ Lint/ConstantDefinitionInBlock:
 
 Metrics/BlockLength:
   Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Max: 14
+
+Metrics/MethodLength:
+  Max: 25
