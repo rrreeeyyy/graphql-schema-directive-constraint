@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = "graphql-schema-directive-constraint"
-  spec.version = "0.2.0"
+  spec.version = "0.3.0"
   spec.authors = ["Ryota Yoshikawa"]
   spec.email = ["yoshikawa@topotal.com"]
 
